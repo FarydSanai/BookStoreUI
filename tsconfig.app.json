@@ -2,7 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      "bootstrap"
+    ]
   },
   "files": [
     "src/main.ts",
@@ -14,5 +16,9 @@
   "exclude": [
     "src/test.ts",
     "src/**/*.spec.ts"
+  ],
+
+  "scripts": [
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js"
   ]
 }

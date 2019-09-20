@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'auth', component: AuthComponent }
+  { path: '404', component: NotFoundComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'auth', component: AuthComponent },
 
+
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 
 @NgModule({
