@@ -9,6 +9,7 @@ import { MenuComponent } from './home/menu/menu.component';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { EnvironmentUrlService } from './shared/services/environment-url.service';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './user/user-component/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     AuthComponent,
     HomeComponent,
     MenuComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

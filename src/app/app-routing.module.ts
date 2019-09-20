@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '404', component: NotFoundComponent },
   { path: 'home', component: HomeComponent },
   { path: 'auth', component: AuthComponent },
-
+  { path: 'user', loadChildren: "./user/user.module#UserModule" },
 
 
   { path: '', redirectTo: '/home', pathMatch: 'full' },

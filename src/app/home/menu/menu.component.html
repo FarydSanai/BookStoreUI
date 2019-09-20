@@ -6,6 +6,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a [routerLink]="['/auth']">Log In</a></li>
+      <li><a [routerLink]="['/user/list']" routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact: true}">Users</a></li>
     </ul>
   </div>
 </nav>
